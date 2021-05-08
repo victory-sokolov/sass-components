@@ -10,12 +10,24 @@
 	<body>
 		<div class="card">
 			<h1>Card Title</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
-				voluptates iste amet reprehenderit nulla quam eum neque, magni vel autem
-				porro, dolorem perspiciatis tempora laboriosam! Id repudiandae
-				voluptatum dicta fuga.
-			</p>
+			<div class="container">
+				<img src="//unsplash.it/350/250" class="class" alt="alt" />
+				<div class="overlay-card">
+					<h1>Overlayed text</h1>
+					<p>Overlayed body text</p>
+				</div>
+			</div>
 		</div>
 	</body>
+
+	<style>
+		.container {
+			position: relative;
+			width: 100%;
+		}
+
+		img {
+			width: 100%;
+		}
+	</style>
 </html>
