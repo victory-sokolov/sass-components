@@ -1,4 +1,3 @@
-
 // Wrapper for hover, active and focus
 // @author Harry Roberts
 // @param {Bool} $self (false) - Whether or not to include current selector
@@ -13,18 +12,33 @@
 }
 */
 @mixin on-event($self: false) {
-    @if $self {
-        &,
-        &:hover,
-        &:active,
-        &:focus {
-            @content;
-        }
-    } @else {
-        &:hover,
-        &:active,
-        &:focus {
-            @content;
-        }
-    }
+	@if $self {
+		&,
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	} @else {
+		&:hover,
+		&:active,
+		&:focus {
+			@content;
+		}
+	}
+}
+
+/* Set font-size, line-height and font-weight for text element */
+@mixin text($size: null, $lineHeight: null, $weight: null) {
+	@if $size != null {
+		font-size: $size;
+	}
+
+	@if $lineHeight != null {
+		line-height: $lineHeight;
+	}
+
+	@if $weight != null {
+		font-weight: $weight;
+	}
 }
