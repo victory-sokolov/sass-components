@@ -1,0 +1,5 @@
+/* Smoth website apperance on the load */
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
