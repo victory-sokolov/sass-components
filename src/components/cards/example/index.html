@@ -8,20 +8,44 @@
 		<title>Card example</title>
 	</head>
 	<body>
-		<div class="card">
-			<h1>Card Title</h1>
-			<div class="container">
+		<div class="container">
+			<div class="card">
 				<img src="//unsplash.it/350/250" class="class" alt="alt" />
-				<div class="overlay-card">
-					<h1>Overlayed text</h1>
-					<p>Overlayed body text</p>
+				<h1>Base Card</h1>
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur,
+					quaerat esse ipsum nisi magnam a? Rerum blanditiis qui, mollitia
+					repellendus tempora fuga deleniti ipsa eos, suscipit nam quae eius
+					quidem.
+				</p>
+				<button>View Details</button>
+			</div>
+
+			<div class="card">
+				<div class="content">
+					<img src="//unsplash.it/350/250" class="class" alt="alt" />
+					<div class="overlay-card">
+						<h1>Overlayed text</h1>
+						<p>Overlayed body text</p>
+					</div>
 				</div>
+				<h1>Card Overlayed</h1>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+					pariatur illum quisquam quos, quibusdam ut reprehenderit nulla,
+					ratione, tempora alias harum nesciunt reiciendis tenetur? Consectetur
+					ut at architecto modi? Quasi!
+				</p>
 			</div>
 		</div>
 	</body>
 
 	<style>
 		.container {
+			display: flex;
+		}
+
+		.content {
 			position: relative;
 			width: 100%;
 		}
