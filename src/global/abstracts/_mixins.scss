@@ -1,0 +1,30 @@
+
+// Wrapper for hover, active and focus
+// @author Harry Roberts
+// @param {Bool} $self (false) - Whether or not to include current selector
+// Usage:
+/*
+.my-element {
+    color: red;
+
+    @include on-event {
+        color: blue;
+    }
+}
+*/
+@mixin on-event($self: false) {
+    @if $self {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    } @else {
+        &:hover,
+        &:active,
+        &:focus {
+            @content;
+        }
+    }
+}
