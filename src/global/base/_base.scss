@@ -20,8 +20,10 @@ body {
 	font-size: 1.4rem;
 	min-width: 320px;
 	position: relative;
-	line-height: calc(14px*1.618);
-	font-family: PT Sans, sans-serif;
+	line-height: calc(14px * 1.618);
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+		'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 	overflow-x: hidden;
 	opacity: 1;
 	color: #333;
